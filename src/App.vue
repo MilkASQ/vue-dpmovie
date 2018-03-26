@@ -14,6 +14,14 @@
 </script>
 
 <style>
+  /**{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }*/
+  ul, li ,p ,a{
+    list-style: none; padding: 0; margin: 0; text-decoration: none;
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

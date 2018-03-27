@@ -13,19 +13,27 @@ let routes = [
     meta: {requireAuth: false}
   },
   {
-    path: '/detail/:id',
+    path: '/movie/:id',
     name: 'Detail',
     component: function (resolve) {
       require(['@/components/detail'], resolve)
     },
     meta: {requireAuth: false}
+  },
+  {
+    path: '/movie/comment/:id',
+    name: 'Comments',
+    component: function (resolve) {
+      require(['@/components/comments'], resolve)
+    },
+    meta: {requireAuth: false}
   }
-]
+];
 
 const router = new Router({
   mode: 'history',
   routes,
   linkActiveClass: 'on'
-})
+});
 
 export default router

@@ -19,6 +19,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }*/
+  body{
+    min-width: 320px;
+  }
   ul, li ,p ,a{
     list-style: none; padding: 0; margin: 0; text-decoration: none;
   }
@@ -26,12 +29,12 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
-    /*margin-top: 60px;*/
   }
 
   body {
     margin: 0 !important;
   }
+  .mint-header h1{font-size: 16px;}
+  .mint-header.is-fixed{z-index: 10000 !important;}
 </style>
